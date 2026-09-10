@@ -1,9 +1,9 @@
 # Current Status
 
-**Stage:** Source migration complete; baseline verification planned.
+**Stage:** Version 1.1.0 distribution assembled; runtime verification pending.
 **Last updated:** 2026-09-10
 
-The supplied PrideHealth Shipping Rates Table version 1.1.0 implementation now lives under `app/src`, which is the project's source of truth. The reference source remains unchanged. Project purpose, behavior, constraints, structure, provenance, and delivery milestones are documented.
+The supplied PrideHealth Shipping Rates Table version 1.1.0 implementation lives under `app/src`, which is the project's source of truth. A versioned distribution archive has been assembled and passed structure, compression-integrity, source-integrity, and PHP syntax checks. Runtime compatibility and behavior have not yet been verified in WordPress and WooCommerce.
 
 ## Completed
 
@@ -11,6 +11,13 @@ The supplied PrideHealth Shipping Rates Table version 1.1.0 implementation now l
 - [Project overview](../overview/project.md)
 - [Source layout decision](../decisions/0001-source-layout.md)
 - [Source migration verification](../reviews/01-source-migration-verification.md)
+- [Version 1.1.0 distribution verification](../reviews/02-distribution-1.1.0.md)
+
+## Distribution
+
+- Artifact: `dist/pridehealth-shipping-rates-table-1.1.0.zip`
+- SHA-256: `3e7d434991538f1b07306cf2ac539e514eab30cc25a6f0b55031d65202c884eb`
+- Release-readiness milestone: [Implemented; verification remains](../milestones/03-release-readiness.md)
 
 ## Next Step
 

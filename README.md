@@ -39,3 +39,15 @@ After activation, open **WooCommerce → Shipping Rates Table**, or visit:
 - [Current status](docs/roadmap/current-status.md)
 - [Master roadmap](docs/roadmap/roadmap.md)
 - [Source layout decision](docs/decisions/0001-source-layout.md)
+
+## Distribution
+
+The current versioned archive is [`dist/pridehealth-shipping-rates-table-1.1.0.zip`](dist/pridehealth-shipping-rates-table-1.1.0.zip).
+
+SHA-256:
+
+```text
+3e7d434991538f1b07306cf2ac539e514eab30cc25a6f0b55031d65202c884eb
+```
+
+The archive has passed structure, compression-integrity, source-integrity, and PHP syntax checks. Runtime compatibility and behavior verification in WordPress and WooCommerce remain pending.
