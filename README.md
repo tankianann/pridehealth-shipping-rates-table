@@ -1,16 +1,41 @@
-# App — Active Project
+# PrideHealth Shipping Rates Table
 
-This directory contains the **active project**. The project's type has not yet been determined — it may turn out to be technical, creative, commercial, strategic, or some mix of these.
+PrideHealth Shipping Rates Table is a small WordPress plugin that adds a read-only WooCommerce administration page for reviewing every configured shipping zone and method in one place.
 
-No software-specific or marketing-specific structure has been assumed or created. Folders like `src/`, `tests/`, `campaigns/`, `copy/`, or `research/` are added only after the project's nature and requirements are understood — see `kaisys/playbook/workflows/project-discovery.md`.
+The table reports each method's configured rate and enabled state. Administrators can export the current configuration as a Markdown table or list, or copy a region-grouped list for Trello.
 
-## Current Contents
+## Requirements
 
-- **`inbox/`** — temporary intake and provenance for app-specific source material.
-- **`docs/`** — neutral project documentation (overview, roadmap, decisions, milestones, reviews, retrospectives, archive).
+- WordPress 6.0 or later
+- PHP 7.4 or later
+- WooCommerce installed and active
 
-## Next Step
+## Project Structure
 
-Run project discovery (`kaisys/playbook/workflows/project-discovery.md`) to define what's being built and for what outcome, create the flexible master roadmap and first detailed milestone, then propose a project-specific structure for this directory before substantive execution begins.
+- `src/` — installable WordPress plugin source.
+- `docs/overview/` — project purpose, users, behavior, scope, and constraints.
+- `docs/roadmap/` — current status and anticipated delivery milestones.
+- `docs/milestones/` — detailed milestone definitions and completion records.
+- `docs/decisions/` — durable implementation and repository decisions.
+- `inbox/` — intake and provenance for future project material.
 
-If the inbox already contains a mature project or product specification, discovery starts by validating its authority, currency, consistency, and lifecycle coverage. Preserve the work it has already settled and continue from the earliest material gap; do not recreate it merely to fit the template.
+The original plugin supplied in `/reference/pridehealth-shipping-rates-table` is read-only reference material. All future product changes belong in `app/src`.
+
+## Installation
+
+For local development, copy or link `src/` into a WordPress installation at `wp-content/plugins/pridehealth-shipping-rates-table`, then activate **PrideHealth Shipping Rates Table** in WordPress.
+
+The production-style upload flow expects a ZIP whose root contains the files from `src/`. Distribution archives are created only when explicitly requested.
+
+After activation, open **WooCommerce → Shipping Rates Table**, or visit:
+
+```text
+/wp-admin/admin.php?page=pridehealth-shipping-rates-table
+```
+
+## Documentation
+
+- [Project overview](docs/overview/project.md)
+- [Current status](docs/roadmap/current-status.md)
+- [Master roadmap](docs/roadmap/roadmap.md)
+- [Source layout decision](docs/decisions/0001-source-layout.md)

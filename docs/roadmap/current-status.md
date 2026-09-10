@@ -1,9 +1,17 @@
 # Current Status
 
-**Stage:** Undefined — workspace bootstrapped, no project defined yet.
+**Stage:** Source migration complete; baseline verification planned.
+**Last updated:** 2026-09-10
 
-The AI project workspace has been created. `/app` contains only neutral documentation; no project type, deliverables, or structure have been decided.
+The supplied PrideHealth Shipping Rates Table version 1.1.0 implementation now lives under `app/src`, which is the project's source of truth. The reference source remains unchanged. Project purpose, behavior, constraints, structure, provenance, and delivery milestones are documented.
+
+## Completed
+
+- [Milestone 1: Source migration and project definition](../milestones/01-source-migration.md)
+- [Project overview](../overview/project.md)
+- [Source layout decision](../decisions/0001-source-layout.md)
+- [Source migration verification](../reviews/01-source-migration-verification.md)
 
 ## Next Step
 
-Run project discovery (`kaisys/playbook/workflows/project-discovery.md`) to define the project, replace the master-roadmap placeholders with an anticipated milestone sequence, and fully define the first delivery milestone—or process any material waiting in `/app/inbox` first.
+Begin [Milestone 2: Baseline compatibility and behavior verification](../milestones/02-baseline-verification.md) by selecting the supported-version matrix and a WordPress/WooCommerce test environment. See the [master roadmap](roadmap.md) for the anticipated delivery sequence.

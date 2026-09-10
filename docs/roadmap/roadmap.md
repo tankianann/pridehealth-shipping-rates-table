@@ -1,12 +1,10 @@
 # Project Master Roadmap
 
-**Last updated:** YYYY-MM-DD
-
-This roadmap describes the project’s current anticipated delivery path. It is a living plan and should change when discovery, implementation, feedback, or constraints reveal a better sequence.
+**Last updated:** 2026-09-10
 
 ## Project Outcome
 
-Describe the outcome the project should produce and the condition that would make the overall project successful.
+Deliver a maintainable WordPress plugin that gives authorized WooCommerce administrators an accurate, read-only overview of live shipping rates and dependable Markdown sharing tools.
 
 ## Status Guide
 
@@ -21,28 +19,33 @@ Describe the outcome the project should produce and the condition that would mak
 
 | Milestone | Status | Intended outcome | Remaining work or dependency |
 | --- | --- | --- | --- |
-| Discovery and planning | In progress | Define the project, delivery path, and justified structure. | Complete discovery and approve the first delivery milestone. |
-| Milestone 1 — To be named | Planned | Describe the first coherent delivery outcome. | Define scope, acceptance criteria, and verification. |
-| Later milestone — To be named | Planned | Describe the next currently anticipated outcome. | Refine as the project approaches it. |
+| [1. Source migration and project definition](../milestones/01-source-migration.md) | Complete | Establish the reference plugin as documented source under `app/src`. | None. |
+| [2. Baseline compatibility and behavior verification](../milestones/02-baseline-verification.md) | Planned | Demonstrate the imported plugin's behavior and compatibility in a representative WooCommerce environment. | Select the supported-version matrix and test environment. |
+| 3. Release readiness and handoff | Planned | Resolve verified release blockers and prepare an approved release candidate. | Depends on Milestone 2 findings and an explicit packaging request. |
 
-Add, remove, split, combine, or reorder milestones to match the actual project. Do not preserve placeholder rows after discovery.
+## Completed Milestones
+
+Milestone 1 imported the version 1.1.0 PHP implementation without behavioral changes, established `app/src` as the source of truth, and replaced neutral workspace documentation with project-specific guidance.
 
 ## Active Milestone
 
-Link to the fully defined milestone document and summarize why it is the right next step.
+No implementation milestone is currently active. [Milestone 2](../milestones/02-baseline-verification.md) is fully outlined and is the next planned milestone once the test matrix and environment are selected.
 
 ## Upcoming Milestones
 
-Describe each currently anticipated milestone at the level supported by the available information. Later milestones may remain higher-level than the active milestone.
+Milestone 2 will establish repeatable static and runtime evidence for the current plugin. Milestone 3 will respond to those findings, complete release-readiness review, and package a distribution only if explicitly requested.
 
 ## Dependencies and Decision Points
 
-Record inputs, approvals, external dependencies, risks, or decisions that could change milestone order or scope.
+- Runtime verification requires access to a WordPress installation with WooCommerce and representative shipping zones.
+- The supported WordPress, PHP, and WooCommerce version matrix has not yet been selected.
+- Structural refactoring should be driven by verification or an agreed feature need rather than performed speculatively.
 
 ## Deferred and Post-Project Work
 
-List work that is explicitly outside the current delivery path so it does not silently enter a delivery milestone.
+- Distribution ZIP creation is deferred until explicitly requested.
+- New features, user-interface redesign, and broader reporting are outside the current plan until requirements are supplied.
 
 ## Immediate Next Step
 
-State the single next planning, implementation, verification, or review action.
+Select the Milestone 2 compatibility matrix and a WordPress/WooCommerce environment for runtime verification.
